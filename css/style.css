@@ -1,0 +1,389 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #E3C800;
+}
+
+/* fondo */
+#background {
+	position: absolute;
+	width: 25%;
+	height: 25%;
+	left: 75%;
+	top: 75%;
+}
+#solido {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background-color: #00561D;
+}
+#imagen1 {
+	position: absolute;
+	height: 100%;
+	width: 45%;
+	left: 30%;
+	background-image: url("../images/casco.jpg");
+	background-size: cover;
+	background-position: center;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-delay: 0.3s;
+	transition-timing-function: ease-in-out;
+	-webkit-box-shadow: -7px 7px 30px #272727;
+    box-shadow: -7px 7px 30px #272727;
+	
+}
+#imagen1:hover {
+	background-image: url("../images/festejo.jpg");
+}
+
+#imagen2 {
+    position: absolute;
+    height: 75%;
+    width: 25%;
+    right: 0%;
+    background-image: url("../images/lluvia medio.jpg");
+    background-size: cover;
+    background-position: center;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+	transition-timing-function: ease-in-out;
+    -webkit-box-shadow: -7px 7px 30px #272727;
+    box-shadow: -7px 7px 30px #272727;
+	filter: brightness(80%);
+}
+#imagen2:hover {
+    width: 70%;
+    height: 85%;
+	filter: brightness(115%);
+}
+
+#imagen2:hover #info {
+	filter: opacity(100%) blur(0px);
+}
+
+
+#linea1 {
+	top: 59%;
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+#linea2 {
+	top: 69%;
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+#firma {
+	transform: translate(-50%,-50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	filter: opacity(75%);
+	transition-property: all;
+	transition-duration: 1s;
+	transition-delay: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+#firma:hover {
+	filter: opacity(100%);
+	transform: translate(-50%,-50%) scale(1.15)
+}
+#info {
+	top: 3%;
+	right: 3%;
+	position: absolute;
+    font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+	letter-spacing: 1px;
+	color: #002277;
+	line-height: normal;
+	filter: opacity(0%) blur(5px);
+	transition-property: all;
+	transition-duration: 1s;
+	transition-delay: 0.3s;
+	transition-timing-function: ease-in-out;
+	text-shadow: -7px 7px 30px #272727;
+}
+
+/* textos */
+
+#textosup {
+	position: absolute;
+	width: 98%;
+	top: 3%;
+	left: 2%	
+}
+
+#f1 {
+	position: absolute;
+    font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
+	color: #FFFFFF;
+	line-height: normal;
+	letter-spacing: 1px;
+	text-shadow: -7px 7px 30px #272727;
+	transition-property: all;
+	transition-duration: 0.7s;
+	transition-delay: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+#link {
+    position: absolute;
+    left: 255px;
+    top: 365px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    color: #00561D;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-shadow: -7px 7px 30px #272727;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-delay: 0.3s;
+    transition-timing-function: ease-in-out;
+    filter: opacity(0%);
+    border: 2px solid #FFFFFF;
+    padding-top: 4px;
+    padding-left: 7px;
+    padding-right: 10px;
+    background-color: #E3C800;
+	border-radius: 100px;
+}
+
+
+#titulo {
+    top: 42px;
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 200px;
+    color: #FFFFFF;
+    line-height: 160px;
+    text-shadow: -7px 7px 30px #272727;
+}
+
+#titulobandera {
+    top: 42px;
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 200px;
+    color: #FFFFFF;
+    line-height: 160px;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-delay: 0.3s;
+	transition-timing-function: ease-in-out;
+	-webkit-text-fill-color: transparent;
+	background: -webkit-linear-gradient(transparent, transparent), url("../images/sentado.jpg");
+	-webkit-background-clip: text;
+	-webkit-background-size: cover;
+	filter: opacity(0%);
+}
+
+#textosup:hover #titulobandera{
+	filter: opacity(100%);
+}
+
+#textosup:hover #link{
+	filter: opacity(100%);
+}
+
+#textosub {
+	position: absolute;
+	width: 360px;
+	height: 150px;
+	bottom: 3%;
+	left: 2%	
+}
+
+#subtitulo {
+	bottom: 120px;
+	position: absolute;
+    font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
+	letter-spacing: 1px;
+	color: #E3C800;
+	line-height: normal;
+	transition-property: all;
+	transition-duration: 0.7s;
+	transition-delay: 0.3s;
+	transition-timing-function: ease-in-out;
+	text-shadow: -7px 7px 30px #272727;
+}
+
+#textosub:hover #subtitulo {
+	font-size: 30px;
+    text-shadow: 0px 0px 10px hsla(0,0%,100%,0.20);
+}
+
+#frase {
+	bottom: 8px;
+	position: absolute;
+    font-family: 'Bebas Neue', cursive;
+	font-size: 50px;
+	color: #FFFFFF;
+	line-height: 50px;
+	text-shadow: -7px 7px 30px #272727;
+}
+
+#excelencia {
+	transition-property: all;
+	transition-duration: 0.7s;
+	transition-delay: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+#textosub:hover #excelencia {
+	color: #E3C800;
+    text-shadow: 0px 0px 10px hsla(0,0%,100%,0.20);
+}
+
+/* redes */
+
+#redes {
+    position: absolute;
+    right: 2%;
+    bottom: 3%;
+    width: 175px;
+    height: 50px;
+    background-color: #002277;
+    border-radius: 100px;
+    -webkit-box-shadow: -7px 7px 30px #272727;
+    box-shadow: -7px 7px 30px #272727;
+}
+
+#fb {
+	position: absolute;
+	top: 11px;
+	left: 18px;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in-out;
+	filter:opacity(85%)
+
+}
+
+#ig {
+	position: absolute;
+	top: 11px;
+	left: 55px;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in-out;
+	filter:opacity(85%)
+}
+
+#tw {
+	position: absolute;
+	top: 11px;
+	right: 55px;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in-out;
+	filter:opacity(85%)
+}
+
+#yt {
+	position: absolute;
+	top: 11px;
+	right: 18px;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in-out;
+	filter:opacity(85%)
+}
+
+#fb:hover {
+    top: 9px;
+	filter:opacity(100%)
+}
+
+#ig:hover {
+	top: 9px;
+	filter:opacity(100%)
+}
+
+#tw:hover {
+	top: 9px;
+	filter:opacity(100%)
+}
+
+#yt:hover {
+	top: 9px;
+	filter:opacity(100%)
+}
+
+/* web */
+
+#web {
+	position: absolute;
+	left: 510px;
+	top: 82px;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	background-color: #002277;
+	transform: translate(-50%,-50%);
+	transition-property: all;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	-webkit-box-shadow: -7px 7px 30px #272727;
+    box-shadow: -7px 7px 30px #272727;
+	filter: opacity(75%);
+}
+
+#web:hover {
+	width: 83px;
+	height: 83px;
+	filter: opacity(100%);
+}
+
+
+#mas {
+	transform:translate(-50%,-50%);
+	position: absolute;
+	top: 51%;
+	left: 50%;
+}
+
+#video {
+	position: absolute;
+	left: 50%;
+	top: 22.5%;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	background-color: #002277;
+	transform: translate(-50%,-50%);
+    transition-property: all;
+    transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	-webkit-box-shadow: -7px 7px 30px #272727;
+    box-shadow: -7px 7px 30px #272727;
+	filter: opacity(75%);
+}
+
+#video:hover {
+	width: 83px;
+	height: 83px;
+	filter: opacity(100%);
+}
+
+#play {
+	transform:translate(-50%,-50%);
+	position: absolute;
+	top: 52%;
+	left: 54%;
+}
